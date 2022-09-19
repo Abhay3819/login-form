@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #f2f2f2;
+}
+::selection{
+    background: #4158d0;
+    color: #fff;
+}
+.wrapper{
+    width: 380px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5) ;   
+}
+.wrapper .title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(-135deg,#c850c0,#415);
+
+}
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 250px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 17px;
+    transition:all 0.3 ease ;
+}
+.wrapper form .field input:valid,
+.wrapper form .field input:focus{
+    border-color: rgb(165, 0, 0);
+}
+.wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3 ease;
+    font-size: 17px;
+    color: #999999;
+}
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label{
+    top: 0%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #415;
+    background: #fff;
+}
+
+.wrapper form .pass-link{
+    color: rgb(94, 202, 139);
+    margin: 8px 0 0 10px;
+}
+.wrapper form .field input[type="Submit"]{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    margin-top: 0px;
+    padding-left: 0px;
+    transition:all 0.3 ease ;
+    cursor: pointer;
+    background: linear-gradient(-135deg,#ca43c1,#415);
+}
+.wrapper form .field input[type="Submit"]:active{
+    transform: scale(0.95);
+}
+
+.wrapper form .field input[type="Submit"]:hover {
+    background: #93ec2d;
+    color: red;
+}
+
+
+.wrapper form .pass-link{
+    color: #415;
+    margin: 8px 0 0 10px;
+}
+.wrapper.fieldform .signup-link{
+    margin-top: 20px;
+    text-align: center;
+    color: #301c1c;
+}
+.wrapper form .signup-link a,
+.wrapper form .pass-link a{
+    color: #4158d0;
+    text-decoration: none;
+    text-align: center;
+}
+.wrapper form .signup-link a:hover,
+.wrapper form .pass-link a:hover{
+    text-decoration: underline;
+}
+
